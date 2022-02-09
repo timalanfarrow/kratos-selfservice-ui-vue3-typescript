@@ -25,9 +25,13 @@ export const OryPlugin: Plugin = {
     app.provide($ory, Ory);
 
     // can now be used with inject($session)
-    Ory.toSession().then(({ data }) => {
-      app.provide($session, data);
-    });
+    Ory.toSession()
+      .then(({ data }) => {
+        app.provide($session, data);
+      })
+      .catch(() => {
+        console.log('[Ory] User has no session.');
+      });
 
     Promise.all([
       // get the logout url

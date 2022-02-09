@@ -14,7 +14,7 @@ withDefaults(
   defineProps<{
     id: string;
     label: string;
-    type: HTMLButtonElement['type'];
+    type: 'button' | 'submit' | 'reset';
     variant?: 'primary' | 'secondary' | 'tertiary';
     name?: string;
     value?: string;

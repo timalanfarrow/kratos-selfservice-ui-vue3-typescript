@@ -40,7 +40,7 @@ defineProps<{
 	FormButton(
 		v-else-if='attributes.type === "submit"'
 		:type='attributes.type'
-		:label='meta.label?.text'
+		:label='meta.label?.text ?? "Submit"'
 		:id='`ory-node-${id}`'
 		:name='attributes.name'
 		:value='attributes.value'
