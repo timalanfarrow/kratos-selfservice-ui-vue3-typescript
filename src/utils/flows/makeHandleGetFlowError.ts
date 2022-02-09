@@ -2,7 +2,7 @@ import type { AxiosError } from 'axios';
 import type { Router } from 'vue-router';
 
 export const makeHandleGetFlowError = (router: Router) => {
-  const refreshFlow = () =>
+  const refreshFlow = () => {
     router.push({
       // for our use case, removing the flow
       // parameter from the search query and
@@ -10,6 +10,9 @@ export const makeHandleGetFlowError = (router: Router) => {
       // to refresh the flow
       query: {},
     });
+
+    window.location.reload();
+  };
 
   return (error: AxiosError) => {
     switch (error.response?.data?.error.id) {
