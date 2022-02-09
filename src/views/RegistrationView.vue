@@ -62,6 +62,6 @@ if (typeof flow !== 'string') {
 #registration {
   margin: var(--space-5) auto 0 auto;
   padding: 0 var(--space-3);
-  width: calc(200px + var(--space-3));
+  width: 250px;
 }
 </style>
