@@ -1,3 +1,5 @@
+*Note from the original author: If you experience trouble using this project and are eager for rapid feedback, please [join the Ory Slack Channel](https://www.ory.sh/docs/guides/social-signin/slack) and reach out to me there. My username is Timothy Farrow.*
+
 # Ory Kratos Vue3 / Vite with Typescript User Interface Reference Implementation
 
 This repository contains a reference implementation for Ory Kratos' in Vue3 /
