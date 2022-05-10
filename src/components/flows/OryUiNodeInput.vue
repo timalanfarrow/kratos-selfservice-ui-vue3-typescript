@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { UiNodeInputAttributes, UiNodeMeta } from '@ory/kratos-client';
+import type { UiNodeInputAttributes, UiNodeMeta } from '@ory/client';
 import TextInput from '../forms/TextInput.vue';
 import FormButton from '../forms/FormButton.vue';
 

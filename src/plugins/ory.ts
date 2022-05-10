@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Plugin, InjectionKey } from 'vue';
-import { Configuration, V0alpha2Api } from '@ory/kratos-client';
-import type { Session, SelfServiceLogoutUrl } from '@ory/kratos-client';
+import { Configuration, V0alpha2Api } from '@ory/client';
+import type { Session, SelfServiceLogoutUrl } from '@ory/client';
 import type { AxiosResponse } from 'axios';
 
 export const Ory = new V0alpha2Api(

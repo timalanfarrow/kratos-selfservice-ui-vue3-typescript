@@ -4,7 +4,7 @@
 </template>
 
 <script setup lang="ts">
-import type { UiText } from '@ory/kratos-client';
+import type { UiText } from '@ory/client';
 
 defineProps<{
   message: UiText;
