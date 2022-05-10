@@ -25,7 +25,7 @@ import type {
   SelfServiceRecoveryFlow,
   SelfServiceSettingsFlow,
   SelfServiceVerificationFlow,
-} from '@ory/kratos-client';
+} from '@ory/client';
 import OryUiNode from './OryUiNode.vue';
 import OryUiMessage from './OryUiMessage.vue';
 import { getNodeId } from '@ory/integrations/ui';

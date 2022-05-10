@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import type { SelfServiceVerificationFlow } from '@ory/kratos-client';
+import type { SelfServiceVerificationFlow } from '@ory/client';
 
 import { ref } from 'vue';
 import { injectStrict } from '../utils';

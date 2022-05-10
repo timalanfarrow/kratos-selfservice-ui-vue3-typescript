@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { SelfServiceLoginFlow } from '@ory/kratos-client';
+import type { SelfServiceLoginFlow } from '@ory/client';
 import type { AxiosError } from 'axios';
 
 import { ref } from 'vue';

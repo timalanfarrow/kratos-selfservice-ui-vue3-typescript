@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { UiNode } from '@ory/kratos-client';
+import type { UiNode } from '@ory/client';
 import {
   isUiNodeAnchorAttributes,
   isUiNodeImageAttributes,
