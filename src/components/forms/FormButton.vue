@@ -1,8 +1,8 @@
 <template lang="pug">
 .button(:class='variant')
-	label.open-sans.caps.fs-2.fw_6(:for='id') {{ label }}
+	label.open-sans.caps.fs-2.fw_6(:for='uid') {{ label }}
 	button(
-		:id='id'
+		:id='uid'
 		:type='type'
 		:name='name'
 		:value='value'
@@ -10,7 +10,9 @@
 </template>
 
 <script setup lang="ts">
-withDefaults(
+import { v4 as uuid } from 'uuid';
+
+const props = withDefaults(
   defineProps<{
     id: string;
     label: string;
@@ -23,6 +25,8 @@ withDefaults(
     variant: 'primary',
   }
 );
+
+const uid = `${props.id}-${uuid()}`;
 </script>
 
 <style scoped lang="scss">
