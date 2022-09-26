@@ -29,7 +29,7 @@ defineProps<{
   p(v-else-if='isUiNodeScriptAttributes(node.attributes)') Script
   p(v-else-if='isUiNodeTextAttributes(node.attributes)') Text
   button(
-    v-else-if='node.type === "submit"'
+    v-else-if='false' 
     type='submit'
   )
   .messages(v-if='node.messages')

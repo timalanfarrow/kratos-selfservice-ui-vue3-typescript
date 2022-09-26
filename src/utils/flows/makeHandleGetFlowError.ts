@@ -2,8 +2,8 @@ import type { AxiosError } from 'axios';
 import type { Router } from 'vue-router';
 
 export const makeHandleGetFlowError = (router: Router) => {
-  const refreshFlow = () => {
-    router.push({
+  const refreshFlow = async () => {
+      await router.push({
       // for our use case, removing the flow
       // parameter from the search query and
       // reloading the page are sufficient
@@ -35,6 +35,8 @@ export const makeHandleGetFlowError = (router: Router) => {
     switch (error.response?.status) {
       case 410: // The flow expired, let's request a new one.
         refreshFlow();
+        console.log('refreshflow');
+
         return;
     }
 
